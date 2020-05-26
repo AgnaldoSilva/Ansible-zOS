@@ -1,0 +1,687 @@
+    1  yum install ping
+    2  yum
+    3  ifconfig
+    4  poweroff
+    5  cd /etc/sysconfig/
+    6  cd network-sc
+    7  cd network-scripts/
+    8  ls
+    9  cat ifcfg-eth0 
+   10  ifconfig
+   11  ping
+   12  ping www.google.com
+   13  ping 192.168.122.1
+   14  ping 172.18.102.65
+   15  systemctl restart NetworkManager
+   16  systemctl status NetworkManager
+   17  ip a show
+   18  nmcli device show eth0
+   19  cat /etc/sysconfig/network-scripts/ifcfg-eth0
+   20  ip r
+   21  ifconfig
+   22  cat /etc/sysconfig/network-scripts/ifcfg-virbr0
+   23  ip addr show virbr0
+   24  systemctl status NetworkManager
+   25  systemctl restart NetworkManager
+   26  ifconfig
+   27  ping www.google.com
+   28  sudo dnf update
+   29  sudo dnf install ansible
+   30  sudo subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms
+   31  subscription-manager register
+   32  subscription-manager register --username agnaldos@br.ibm.com --password cOKH707rSky#a9qOp?b8
+   33  subscription-manager list --available
+   34  sudo dnf install ansible
+   35  sudo dnf update
+   36  sudo dnf updates
+   37  subscription-manager attach --pool=8a85f69c671cb39701671f54cfc365cb
+   38  subscription-manager attach --pool=8a85f69c671cb39701671f54cfc365cbsubscription-manager attach --pool=8a85f69c671cb39701671f54cfc365cb
+   39  subscription-manager attach --pool=8a85f99c7228c9ae01722a8f67b34dac
+   40  dnf install ansible
+   41  subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms
+   42  dnf install ansible
+   43  ansible-galaxy collection install ibm.ibm_zos_zosmf
+   44  ansible-galaxy collection install ibm.ibm_zoscore
+   45  ansible-galaxy collection install ibm.ibm_zos_core
+   46  ansible-galaxy collection install ibm.ibm_zos_zowe
+   47  yum install nodejs
+   48  node --version
+   49  npm --version
+   50  yum install gnome-keyring
+   51  yum install libsecret
+   52  EXIT
+   53  exit
+   54  cd /home/agnaldosilva/Desktop/zowe/package
+   55  npm install -g zowe-cli.tgz 
+   56  dir
+   57  ls
+   58  cd ..
+   59  ls
+   60  cd plugins
+   61  dir
+   62  ls -ltr
+   63  npm install -g cics-for-zowe-cli.tgz 
+   64  npm install -g db2-for-zowe-cli.tgz 
+   65  ls -ltr
+   66  npm install -g ims-for-zowe-cli.tgz 
+   67  npm install -g mq-for-zowe-cli.tgz 
+   68  npm install -g zos-ftp-for-zowe-cli.tgz 
+   69  zosmf_db2
+   70  zowe db2
+   71  zowe zosmf db2
+   72  zowe zosmf --help
+   73  ls 
+   74  cd ..
+   75  ls
+   76  cd package
+   77  ls
+   78  zowe plugins install secure-credential-store-for-zowe-cli.tgz 
+   79  more /root/.npm/_logs/2020-05-19T21_15_44_416Z-debug.log
+   80  ls -ltr
+   81  cd ..
+   82  ls
+   83  cd plugins
+   84  ls
+   85  zowe plugins install db2-for-zowe-cli.tgz 
+   86  zowe --help
+   87  zowe zos-tso
+   88  zowe zos-db2
+   89  zowe --help
+   90  cd /home/agnaldosilva/Desktop/zowe
+   91  ls
+   92  cd package
+   93  ls -ltr
+   94  npm plugins install secure-credential-store-for-zowe-cli.tgz 
+   95  zowe plugins install secure-credential-store-for-zowe-cli.tgz 
+   96  ls -ltr
+   97  cd /root
+   98  ls -ltr
+   99  mkdir .npm
+  100  chmod 777 .npm
+  101  ls -ltr
+  102  ls -ltr .npm
+  103  cd /home/agnaldosilva/Desktop/zowe
+  104  zowe plugins install secure-credential-store-for-zowe-cli.tgz 
+  105  cd /home/agnaldosilva/Desktop/zowe
+  106  pwd
+  107  ls -ltr
+  108  cd /root
+  109  cd /.zoew
+  110  cd /.zowe
+  111  mkdir .zowe
+  112  chmod 777 .zowe
+  113  cd /.zowe
+  114  cd .zowe
+  115  ls -ltr
+  116  cd plugins
+  117  ls -ltr
+  118  pwd
+  119  cd cd /home/agnaldosilva/Desktop/zowe
+  120  cd /home/agnaldosilva/Desktop/zowe
+  121  ;s
+  122  ls
+  123  cd plugins
+  124  ls
+  125  cd ..
+  126  cd package
+  127  ls
+  128  mv secure-credential-store-for-zowe-cli.tgz secure-credential-store-for-zowe-cli.tgz
+  129  mv secure-credential-store-for-zowe-cli.tgz /root/.zowe/plugins
+  130  zowe plugins install secure-credential-store-for-zowe-cli.tgz 
+  131  pwd
+  132  ls
+  133  cd ..
+  134  ls
+  135  cd package
+  136  ls
+  137  npm install -g zowe-cli.tgz
+  138  zowe plugins install secure-credential-store-for-zowe-cli.tgz 
+  139  ls
+  140  npm install -g @zowe/cli@zowe-v1-lts
+  141  zowe plugins install @zowe/secure-credential-store-for-zowe-cli@zowe-v1-lts
+  142  cd build/Release/
+  143  cd build
+  144  exit
+  145  zowe plugins install @zowe/secure-credential-store-for-zowe-cli@zowe-v1-lts
+  146  cd /usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js
+  147  cd /usr/bin/node
+  148  cd /usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js
+  149  cd /usr/lib/node_modules/npm/node_modules/
+  150  ls
+  151  cd ..
+  152  ls -ltr
+  153  pwd
+  154  cd /usr/bin
+  155  cd node
+  156  ls -ltr
+  157  cd node
+  158  ls -ltr | grep -i node
+  159  chmod node 777
+  160  chmod 777 node
+  161  ls -ltr | grep -i node
+  162  zowe plugins install @zowe/secure-credential-store-for-zowe-cli@zowe-v1-lts
+  163  cd /usr/lib/node_modules/npm/node_modules/
+  164  ls -ltr
+  165  cd ..
+  166  ls -ltr
+  167  cd ..
+  168  ls -ltr
+  169  chmod 777 .
+  170  ls -ltr
+  171  chmod 777 *
+  172  ls -ltr
+  173  zowe plugins install @zowe/secure-credential-store-for-zowe-cli@zowe-v1-lts
+  174  ls -ltr
+  175  chmod 777 -R *
+  176  zowe plugins install @zowe/secure-credential-store-for-zowe-cli@zowe-v1-lts
+  177  zowe --help
+  178  zowe plugins
+  179  zowe plugins list
+  180  zowe plugins install cics-for-zowe-cli.tgz
+  181  cd /home
+  182  ls
+  183  cd agnaldosilva/
+  184  ls
+  185  cd Desktop/
+  186  ls
+  187  cd zowe
+  188  ls
+  189  cd plugins
+  190  ls
+  191  zowe plugins install cics-for-zowe-cli.tgz
+  192  zowe plugins list
+  193  ls -ltr
+  194  zowe plugins install ims-for-zowe-cli.tgz
+  195  zowe plugins install mq-for-zowe-cli.tgz
+  196  zowe plugins install zos-for-zowe-cli.tgz
+  197  ls -ltr
+  198  zowe plugins install zos-ftp-for-zowe-cli.tgz
+  199  zowe plugins list
+  200  zowe db2 execute
+  201  zowe db2
+  202  zowe --help
+  203  zowe tso
+  204  cls
+  205  clear
+  206  zowe plugins install @zowe/db2-for-zowe-cli@zowe-v1-lts
+  207  zowe --help
+  208  zowe db2
+  209  pwd
+  210  cd ..
+  211  pwd
+  212  pwd odbc_cli
+  213  dir
+  214  ls -ltr
+  215  mkdir odbc_cli
+  216  ls -ltr
+  217  chmod 777 *
+  218  ls -ltr
+  219  pwd
+  220  ls -ltr
+  221  ls
+  222  cd odbc_cli/
+  223  ls
+  224  ls -ltr
+  225  pwd
+  226  export IBM_DB_INSTALLER_URL=/home/agnaldosilva/Desktop/odbc_cli
+  227  cd ..
+  228  ls
+  229  cd zowe
+  230  ls
+  231  cd plugins
+  232  ls
+  233  zowe plugins install zowe zowe-db2.tgz
+  234  zowe plugins install @zowe/db2-for-zowe-cli@zowe-v1-lts
+  235  zowe plugins list
+  236  zowe db2
+  237  zowe mq
+  238  zowe ims
+  239  zowe tso
+  240  ansible
+  241  ping 172.24.200.68
+  242  ansible
+  243  ansible -i --list-hosts
+  244  ansible --list-hosts
+  245  ansible -i
+  246  ansible zosmf
+  247  ansible zoscore
+  248  clear
+  249  git
+  250  git login
+  251  git clone https://github.com/ansible-collections/ibm_zos_core
+  252  ls
+  253  git pull
+  254  git --help
+  255  git pull zos_ssh.py
+  256  git init
+  257  git pull zos_ssh.py
+  258  git pull ibm_zos_core
+  259  ls
+  260  cd plugins
+  261  ls
+  262  cd connection
+  263  ls
+  264  zos_ssh.py
+  265  phyton
+  266  zos_ssh
+  267  yum search python3
+  268  yum install python3
+  269  python3
+  270  ls
+  271  dir
+  272  ls
+  273  python zos_ssh
+  274  python3 zos_ssh
+  275  python3 zos_ssh.py
+  276  ansible zos_zoscore
+  277  ansible -i --h
+  278  ansible-inventory -i --h
+  279  ansible-inventory -h
+  280  cleare
+  281  cls
+  282  clear
+  283  ansible-inventory -h
+  284  ansible-inventory --list
+  285  cd /etc/ansible/hosts
+  286  cd /etc/ansible
+  287  ls
+  288  cd hosts
+  289  vi hosts
+  290  ls
+  291  vi hosts
+  292  ansible-inventory --list-hosts
+  293  ansible-inventory --list
+  294  ansible-zosw
+  295  ansible
+  296  ansible --help
+  297  pwd
+  298  cd ..
+  299  cd /home/
+  300  ls
+  301  cd agnaldosilva/
+  302  cd Desktop/
+  303  ls
+  304  cd zowe
+  305  ls
+  306  cd plugins
+  307  ls
+  308  cd collections/
+  309  dir
+  310  ls
+  311  cd ..
+  312  ls
+  313  cd plugins
+  314  ls
+  315  cd action
+  316  ls
+  317  python3 zos_job_submit.py 
+  318  python3 zos_ping.py
+  319  cd ..
+  320  ls
+  321  cd modules
+  322  ls
+  323  zos_ping.rexx
+  324  zos_tso_command.py
+  325  python zos_tso_command.py 
+  326  python3 zos_tso_command.py 
+  327  python3 zos_tso_command.py LU AGNALDO
+  328  python3 zos_tso_command.py stdin
+  329  cd /etc/ansible/hosts
+  330  cd /etc/ansible
+  331  vi hosts
+  332  ansible-inventory --list-hosts
+  333  ansible-inventory --list
+  334  ls
+  335  vi hosts
+  336  ansible-inventory --list
+  337  vi hosts
+  338  ansible-inventory --list
+  339  vi hosts
+  340  ansible-inventory --list
+  341  vi hosts
+  342  ansible-inventory --list
+  343  ansible --version
+  344  cat ~/.ansible.cfg
+  345  exit
+  346  vi /etc/ansible/hosts
+  347  ansible-inventory --list
+  348  ansible all --list-hosts
+  349  vi /etc/ansible/hosts
+  350  ansible all --list-hosts
+  351  vi /etc/ansible/hosts
+  352  ansible all --list-hostsf
+  353  ansible all --list-hosts
+  354  vi /etc/ansible/hosts
+  355  ansible all --list-hosts
+  356  vi /etc/ansible/hosts
+  357  ansible all --list-hosts
+  358  ansible zssh -m ping
+  359  ssh agnaldo@172.24.200.68
+  360  telnet
+  361  telnet 172.24.200.68:22
+  362  yum install telnet
+  363  yum clean packages
+  364  yum install telnet
+  365  ping 172.24.200.68
+  366  exit
+  367  alternatives --set python /usr/bin/python3
+  368  ansible zssh -m ping
+  369  ssh agnaldo@172.24.200.68
+  370  ansible zssh -m ping
+  371  ansible --version
+  372  more /etc/ansible/ansible.cfg
+  373  cat /etc/ansible/ansible.cfg | grep -i python
+  374  cat /etc/ansible/ansible.cfg | grep -i facts
+  375  cat /etc/ansible/ansible.cfg | grep -i default
+  376  clear
+  377  cat /etc/ansible/ansible.cfg | grep -i default
+  378  clear
+  379  cat /etc/ansible/ansible.cfg | grep -i defaults
+  380  cat /etc/ansible/ansible.cfg | grep -i default
+  381  CLEAR
+  382  clear
+  383  ansible --version
+  384  ansible-inventory --version
+  385  cd /usr/lib/python3.6/site-packages/ansible
+  386  cd /usr/bin/ansible-inventory
+  387  cd /etc
+  388  ls
+  389  cd ansible
+  390  ls
+  391  vi hosts
+  392  ansible zssh -m ping
+  393  cd /etc/alternatives/python3
+  394  ansible ztso -m ping
+  395  ssh agnaldo@172.24.200.68
+  396  ansible zssh -m ping
+  397  ansible ztso -m ping
+  398  telnet 172.24.200.68 22
+  399  pwd
+  400  ls
+  401  more hosts
+  402  vi hosts
+  403  cd /etc/ansible/
+  404  ls
+  405  pwd
+  406  ls
+  407  cd ..
+  408  ls
+  409  cd$HOME
+  410  cd $home
+  411  ls
+  412  pwd
+  413  exit
+  414  cd /etc/ansible/
+  415  vi hosts
+  416  exit
+  417  cd /etc/hosts
+  418  cd /etc/ansible
+  419  vi hosts
+  420  exit
+  421  zowe plugins --list
+  422  zowe --help
+  423  zowe plugins -h
+  424  zowe plugins list
+  425  ansible zssh -m ping
+  426  pwd
+  427  cd /home/agnaldosilva/Desktop/zowe/
+  428  ls
+  429  mkdir zowe-tutorial
+  430  cd zowe-tutorial/
+  431  ls
+  432  pwd
+  433  git clone https://github.com/zowe/zowe-cli-sample-plugin
+  434  pwd
+  435  dir
+  436  cd zowe-cli-sample-plugin/
+  437  git checkout master
+  438  npm install
+  439  npm audit fix
+  440  ls
+  441  ls -ltr
+  442  jeckins
+  443  cd __tests__/
+  444  ls
+  445  cd __resources__/
+  446  ls
+  447  cp example_directory custom_properties.yaml
+  448  ls -ltr
+  449  cd properties/
+  450  ls
+  451  cp example_properties.yaml custom_properties.yaml
+  452  vi custom_properties.yaml 
+  453  dir
+  454  pwd
+  455  cd ..
+  456  ls
+  457  dir
+  458  pwd
+  459  cd ..
+  460  ls
+  461  ls -ltr
+  462  npm run test
+  463  ls
+  464  cd _t
+  465  ls
+  466  cd __tests__/
+  467  ls
+  468  cd __res
+  469  cd __resources__/
+  470  ls
+  471  cd example_directory/
+  472  ls
+  473  cd ..
+  474  ls
+  475  pwd
+  476  ls
+  477  cd __resources__/
+  478  ls
+  479  cd properties/
+  480  ls
+  481  vi example_properties.yaml 
+  482  vi custom_properties.yaml 
+  483  cd properties/
+  484  cd ..
+  485  ls
+  486  pwd
+  487  ndm run test
+  488  npm run test
+  489  more /home/agnaldosilva/Desktop/zowe/zowe-tutorial/zowe-cli-sample-plugin/__tests__/__results__/data/83e1382c-50c0-46e4-95d6-e872590b238b_fail_command/install_plugin.sh
+  490  pwd
+  491  cd ..
+  492  ls
+  493  pwd
+  494  zowe plugins install ./zowe-cli-sample-plugin/
+  495  pwd
+  496  cd ..
+  497  ls
+  498  cd plugins
+  499  ls
+  500  cd plugins
+  501  ls
+  502  cd ..
+  503  zowe plugins install ./zowe-cli-sample-plugin/
+  504  zowe plugins install /home/agnaldosilva/Desktop/zowe/zowe-tutorial/zowe-cli-sample-plugin/
+  505  cd ..
+  506  ls
+  507  cd plugins
+  508  ls
+  509  pwd
+  510  cd plugins/
+  511  ls
+  512  cd ..
+  513  ls
+  514  pwd
+  515  cd /home/agnaldosilva/Desktop/zowe/zowe-tutorial
+  516  ls
+  517  cp /home/agnaldosilva/Desktop/zowe/zowe-tutorialzowe-cli-sample-plugin /home/agnaldosilva/Desktop/zowe/plugins
+  518  cp /home/agnaldosilva/Desktop/zowe/zowe-tutorial/zowe-cli-sample-plugin /home/agnaldosilva/Desktop/zowe/plugins
+  519  cp -r /home/agnaldosilva/Desktop/zowe/zowe-tutorial/zowe-cli-sample-plugin /home/agnaldosilva/Desktop/zowe/plugins
+  520  pwd
+  521  cd /home/agnaldosilva/Desktop/zowe/plugins
+  522  ls
+  523  zowe install ./zowe-cli-sample-plugin
+  524  zowe install zowe-cli-sample-plugin
+  525  zowe plugin install ./zowe-cli-sample-plugin
+  526  zowe plugins install ./zowe-cli-sample-plugin
+  527  ;s
+  528  ls
+  529  cd plugins
+  530  ls
+  531  cd ..
+  532  zowe scs update
+  533  zowe 
+  534  zowe plugins list
+  535  zowe zos-core
+  536  zos-jobs
+  537  zowe zos-jobs
+  538  zowe list 
+  539  zowe zos-jobs list
+  540  zowe zos-jobs list jobs
+  541  zowe zos-jobs list jobs --172.24.200.68
+  542  zowe zos-jobs list
+  543  zowe zos-jobs list spool-files-by-jobid
+  544  zowe zos-jobs list spool-files-by-jobid job02284
+  545  zowe zos-jobs -H 172.24.200.68 -u agnaldo --pw j1n34r60 spool-files-by-jobid job02284
+  546  zowe zos-jobs spool-files-by-jobid job02284 -H 172.24.200.68 -u agnaldo --pw j1n34r60
+  547  zowe zos-jobs spool-files-by-jobid job02284 llhost 172.24.200.68 --user agnaldo --password j1n34r60
+  548  zowe profile
+  549  zowe profiles
+  550  zowe list profiles
+  551  zowe profiles list
+  552  zowe profiles list tso-profiles
+  553  zowe profiles create --help
+  554  zowe profiles create tso-profile --help
+  555  zowe profiles create tso-profile ztso --cs EBCDIC --cp EBCDIC --l SYSUSER
+  556  zowe profiles list tso-profile
+  557  zowe profiles delete
+  558  zowe profiles delete tso-profile
+  559  zowe profiles delete tso-profile ztso
+  560  zowe profiles create tso-profile ztso --cs EBCDIC --cp EBCDIC --l SYSUSER --host 172.24.200.68 --port 23 --password j1n34r60
+  561  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 23 --password j1n34r60
+  562  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
+  563  zowe profiles delete zosmf-profile zosmf
+  564  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 23 --password j1n34r60 --user agnaldo
+  565  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
+  566  zowe profiles delete zosmf-profile zosmf
+  567  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 443 --password j1n34r60 --user agnaldo
+  568  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
+  569  telnet 172.24.200.68 443
+  570  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
+  571  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
+  572  zowe
+  573  zowe zowe-tso 
+  574  zowe zowe-tso?
+  575  zowe zos-tso
+  576  zowe zos-tso ping 172.24.200.68
+  577  zowe zos-tso ping 
+  578  zowe zos-tso ping tso
+  579  zowe zos-tso ping izusvr1
+  580  zowe zos-tso ping address-space izusvr1
+  581  zowe zos-tso ping address-space tso
+  582  zowe zos-tso ping address-space uss
+  583  zowe zos-tso ping address-space sdsf
+  584  zowe zos-tso ping address-space ispf
+  585  zowe zosmf check status --host 172.24.200.68 --port 443 --user agnaldo --password j1n34r60
+  586  zowe
+  587  zowe zos-uss check status --host 172.24.200.68 --port 443 --user agnaldo --password j1n34r60
+  588* 
+  589  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
+  590  zowe --zosmf-profile zosmf
+  591  zowe zos-console
+  592  zowe zos-console issue 'd a,l'
+  593  zowe zos-console issue --help
+  594  zowe zos-console issue --help-examples
+  595  zowe zos-console issue command "D IPLINFO"
+  596  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf --reject-unauthorized false
+  597  zowe zosmf-profiles
+  598  zowe
+  599  zowe profiles
+  600  zowe profiles ls
+  601  zowe profiles ls zosmf-profiles 
+  602  zowe profiles create tso-profiles
+  603  zowe profiles create tso-profile
+  604  zowe profiles create tso-profile --help
+  605  zowe profiles create tso-profile agnaldo -l SYSUSER
+  606  zowe profiles ls zosmf-profiles 
+  607  zowe profiles ls zosmf-profiles zosmf
+  608  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf --reject-unauthorized false
+  609  zowe zos-files list data-set "AGNALDO.*" --tso-profile zosmf --reject-unauthorized false
+  610  zowe zos-files list data-set "AGNALDO.*" --tso-profile agnaldo --reject-unauthorized false
+  611  zowe profiles create zosmf-profile --help
+  612  zowe profiles delete zosmf-profile zosmf
+  613  zowe zosmf check status --host 172.24.200.68 --port 443 --user agnaldo --password j1n34r60 --reject-unauthorized false 
+  614  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
+  615  ping ZOSTEC1.ZCENTER.SPO.IHOST.COM
+  616  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
+  617  pwd
+  618  ls -ltr
+  619  zowe zosmf check status
+  620  zowe zosmf check status zosmf
+  621  zowe
+  622  zowe zos-files
+  623  zowe zos-files list
+  624  zowe zos-files list ds
+  625  clear
+  626  zowe zos-files list ds
+  627  zowe zos-files list ds "AGNALDO.*"
+  628  zowe zos-files list ds "AGNALDO.BECOME.JOBS"
+  629  zowe zos-files list ds "AGNALDO.BECOME.JOBS" --tso-profile agnaldo
+  630  zowe zos-files list ds "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68
+  631  zowe zos-files list all-members ds "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68
+  632  zowe zos-files list data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68
+  633  zowe zos-files list data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  634  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  635  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  636  zowe zos-files list 
+  637  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --rf out.json --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  638  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --rf --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  639  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --rf --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  640  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --rf out --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  641  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  642  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false
+  643  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false -l SYSUSER
+  644  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false
+  645  zowe
+  646  zowe ZOS-USS
+  647  zowe zos-uss
+  648  zowe zos-uss --help-examples
+  649  zowe zos-uss issue ssh".profile"
+  650  zowe zos-uss issue ssh ".profile"
+  651  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized falsezowe zos-files list all-members "AGNALDO.BECOME.JOBS"
+  652  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false 
+  653  clear
+  654  zowe zos-uss issue ssh ".profile" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false
+  655  zowe zos-uss issue ssh ".profile" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 
+  656  history
+  657  history >> Commands from 05212020
+  658  history >> commands from 05212020.txt
+  659  history all  >> commands from 05212020.txt
+  660  man history
+  661  history -a  >> commands from 05212020.txt
+  662  ls -ltr
+  663  more commands
+  664  more from
+  665  ls
+  666  ls -ltr
+  667  rm commands
+  668  rm Commands
+  669  rm from 
+  670  history -a  >> commands_from_05212020.txt
+  671  ls -ltr
+  672  more commands_from_05212020.txt 
+  673  rm Commands
+  674  rm commands
+  675  rm from
+  676  ls
+  677  ls -ltr
+  678  rm commands_from_05212020.txt 
+  679  ls
+  680  history -a  >> commands_from_05212020.txt
+  681  ls -ltr
+  682  more commands_from_05212020.txt 
+  683  rm commands_from_05212020.txt 
+  684  history
+  685  history -a
+  686  ls -ltr
+  687  history >> cmd

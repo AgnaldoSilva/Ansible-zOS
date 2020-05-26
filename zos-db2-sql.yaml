@@ -1,0 +1,41 @@
+---
+- hosts: all
+  collections:
+    - ibm.ibm_zos_core
+  gather_facts: no
+  vars:
+    tgt_tmp_dir: "/u/user/zcenter/AGNALDO/"
+    ctl_tmp_dir: "/tmp"
+  environment: "{{ environment_vars }}"
+  connection: ibm.ibm_zos_core.zos_ssh
+
+  tasks: 
+
+    # ###########################################################
+    # Ping zos
+    # ###########################################################
+    - name: Ping the zos host
+      zos_ping:
+      register: result
+
+    - name: Response
+      debug: 
+        msg: "{{ result }}"
+
+    # ############################################################
+    # Modules uss encode: Copy and Execute Script
+    # ############################################################
+    - name: Execute Shell script {{ tgt_tmp_dir }}/script.sql on
+        target {{ inventory_hostname ]]
+      copy:
+        dest: "{{ tgt_tmp_dir }}/script.sql"
+        content: |
+          date
+        owner: "{{ ansible_user }}/script.sql"
+        mode: "0755"
+        force: yes
+
+    - name: Execute {{ tgt_tmp_dir}}/script.sql
+      shell: "{{ tgt_tmp_dir }}/script.sql"
+      register: result
+      when: script_sh_mode == "0755"
