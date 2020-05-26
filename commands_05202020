@@ -542,9 +542,9 @@
   542  zowe zos-jobs list
   543  zowe zos-jobs list spool-files-by-jobid
   544  zowe zos-jobs list spool-files-by-jobid job02284
-  545  zowe zos-jobs -H 172.24.200.68 -u agnaldo --pw j1n34r60 spool-files-by-jobid job02284
-  546  zowe zos-jobs spool-files-by-jobid job02284 -H 172.24.200.68 -u agnaldo --pw j1n34r60
-  547  zowe zos-jobs spool-files-by-jobid job02284 llhost 172.24.200.68 --user agnaldo --password j1n34r60
+  545  zowe zos-jobs -H 172.24.200.68 -u agnaldo --pw xxxxxxxx spool-files-by-jobid job02284
+  546  zowe zos-jobs spool-files-by-jobid job02284 -H 172.24.200.68 -u agnaldo --pw xxxxxxxx
+  547  zowe zos-jobs spool-files-by-jobid job02284 llhost 172.24.200.68 --user agnaldo --password xxxxxxxx
   548  zowe profile
   549  zowe profiles
   550  zowe list profiles
@@ -557,14 +557,14 @@
   557  zowe profiles delete
   558  zowe profiles delete tso-profile
   559  zowe profiles delete tso-profile ztso
-  560  zowe profiles create tso-profile ztso --cs EBCDIC --cp EBCDIC --l SYSUSER --host 172.24.200.68 --port 23 --password j1n34r60
-  561  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 23 --password j1n34r60
+  560  zowe profiles create tso-profile ztso --cs EBCDIC --cp EBCDIC --l SYSUSER --host 172.24.200.68 --port 23 --password xxxxxxxx
+  561  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 23 --password xxxxxxxx
   562  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
   563  zowe profiles delete zosmf-profile zosmf
-  564  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 23 --password j1n34r60 --user agnaldo
+  564  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 23 --password xxxxxxxx --user agnaldo
   565  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
   566  zowe profiles delete zosmf-profile zosmf
-  567  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 443 --password j1n34r60 --user agnaldo
+  567  zowe profiles create zosmf-profile zosmf --host 172.24.200.68 --port 443 --password xxxxxxxx --user agnaldo
   568  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
   569  telnet 172.24.200.68 443
   570  zowe zos-files list data-set "agnaldo.*" --zosmf-profile zosmf
@@ -582,9 +582,9 @@
   582  zowe zos-tso ping address-space uss
   583  zowe zos-tso ping address-space sdsf
   584  zowe zos-tso ping address-space ispf
-  585  zowe zosmf check status --host 172.24.200.68 --port 443 --user agnaldo --password j1n34r60
+  585  zowe zosmf check status --host 172.24.200.68 --port 443 --user agnaldo --password xxxxxxxx
   586  zowe
-  587  zowe zos-uss check status --host 172.24.200.68 --port 443 --user agnaldo --password j1n34r60
+  587  zowe zos-uss check status --host 172.24.200.68 --port 443 --user agnaldo --password xxxxxxxx
   588* 
   589  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
   590  zowe --zosmf-profile zosmf
@@ -610,7 +610,7 @@
   610  zowe zos-files list data-set "AGNALDO.*" --tso-profile agnaldo --reject-unauthorized false
   611  zowe profiles create zosmf-profile --help
   612  zowe profiles delete zosmf-profile zosmf
-  613  zowe zosmf check status --host 172.24.200.68 --port 443 --user agnaldo --password j1n34r60 --reject-unauthorized false 
+  613  zowe zosmf check status --host 172.24.200.68 --port 443 --user agnaldo --password xxxxxxxx --reject-unauthorized false 
   614  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
   615  ping ZOSTEC1.ZCENTER.SPO.IHOST.COM
   616  zowe zos-files list data-set "AGNALDO.*" --zosmf-profile zosmf
@@ -627,32 +627,32 @@
   627  zowe zos-files list ds "AGNALDO.*"
   628  zowe zos-files list ds "AGNALDO.BECOME.JOBS"
   629  zowe zos-files list ds "AGNALDO.BECOME.JOBS" --tso-profile agnaldo
-  630  zowe zos-files list ds "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68
-  631  zowe zos-files list all-members ds "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68
-  632  zowe zos-files list data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68
-  633  zowe zos-files list data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  634  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  635  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
+  630  zowe zos-files list ds "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68
+  631  zowe zos-files list all-members ds "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68
+  632  zowe zos-files list data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68
+  633  zowe zos-files list data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  634  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  635  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
   636  zowe zos-files list 
-  637  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --rf out.json --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  638  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --rf --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  639  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --rf --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  640  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --rf out --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  641  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user AGNALDO --password j1n34r60 --host 172.24.200.68 --reject-unauthorized false
-  642  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false
-  643  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false -l SYSUSER
-  644  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false
+  637  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --rf out.json --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  638  zowe zos-files list all-members data-set "AGNALDO.BECOME.JOBS" --rf --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  639  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --rf --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  640  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --rf out --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  641  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user AGNALDO --password xxxxxxxx --host 172.24.200.68 --reject-unauthorized false
+  642  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 --reject-unauthorized false
+  643  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 --reject-unauthorized false -l SYSUSER
+  644  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 --reject-unauthorized false
   645  zowe
   646  zowe ZOS-USS
   647  zowe zos-uss
   648  zowe zos-uss --help-examples
   649  zowe zos-uss issue ssh".profile"
   650  zowe zos-uss issue ssh ".profile"
-  651  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized falsezowe zos-files list all-members "AGNALDO.BECOME.JOBS"
-  652  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false 
+  651  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 --reject-unauthorized falsezowe zos-files list all-members "AGNALDO.BECOME.JOBS"
+  652  zowe zos-files list all-members "AGNALDO.BECOME.JOBS" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 --reject-unauthorized false 
   653  clear
-  654  zowe zos-uss issue ssh ".profile" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 --reject-unauthorized false
-  655  zowe zos-uss issue ssh ".profile" --user "AGNALDO" --password "j1n34r60" --host 172.24.200.68 
+  654  zowe zos-uss issue ssh ".profile" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 --reject-unauthorized false
+  655  zowe zos-uss issue ssh ".profile" --user "AGNALDO" --password "xxxxxxxx" --host 172.24.200.68 
   656  history
   657  history >> Commands from 05212020
   658  history >> commands from 05212020.txt

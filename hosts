@@ -3,21 +3,21 @@
             "zssh": {
                 "ansible_host": "172.24.200.68",
                 "ansible_port": 22,
-                "ansible_ssh_pass": "j1n34r60",
+                "ansible_ssh_pass": "xxxxxxxx",
                 "ansible_user": "agnaldo",
                 "ansible_python_interpreter":"/etc/alternatives/python3"
             },
             "ztso": {
                 "ansible_host": "172.24.200.68",
                 "ansible_port": 23,
-                "ansible_ssh_pass": "j1n34r60",
+                "ansible_ssh_pass": "xxxxxxxx",
                 "ansible_user": "agnaldo",
                 "ansible_python_interpreter":"/etc/alternatives/python3"
             },
             "zosmf": {
                 "ansible_host": "172.24.200.68",
                 "ansible_port": 443,
-                "ansible_ssh_pass": "j1n34r60",
+                "ansible_ssh_pass": "xxxxxxxx",
                 "ansible_user": "agnaldo",
                 "ansible_python_interpreter":"/etc/alternatives/python3"
             }
